@@ -1,13 +1,13 @@
 {
   "name": "cypress",
   "version": "1.0.0",
-  "description": "Cypress project",
+  "description": "Tugas Akhir Automation with Cypress Typescript ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress open"
   },
   "keywords": [],
-  "author": "",
+  "author": "Diah",
   "license": "ISC",
   "dependencies": {
     "cypress": "^9.5.4",
