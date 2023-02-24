@@ -1,5 +1,3 @@
-import { JsxEmit } from "typescript"
-
 export class LoginPage{
     txt_username = '#user-name'
     txt_password = '#password'
