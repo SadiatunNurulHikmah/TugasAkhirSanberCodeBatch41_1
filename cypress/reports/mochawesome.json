@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-02-25T06:09:01.891Z",
+    "end": "2023-02-25T06:09:20.493Z",
+    "duration": 18602,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "52ff5280-1a22-4a80-9d95-72e4ed97a2ae",
+      "title": "",
+      "fullFile": "cypress/integration/checkout.ts",
+      "file": "cypress/integration/checkout.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "checkout Sauce Labs Backpack",
+          "fullTitle": "checkout Sauce Labs Backpack",
+          "timedOut": null,
+          "duration": 8905,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "dashboardPage.addToCart_SauceLabsBackpack();\ndashboardPage.clickCartShopping();\ncartPage.checkoutProduct();\ncheckoutStepOnePage.checkoutValid('Diah', 'Hikmah', '122345');\ncheckoutStepTwoPage.confirmCheckout();\ncheckoutCompletePage.complete();",
+          "err": {},
+          "uuid": "77225789-89e9-492f-baa7-320d4ff218b7",
+          "parentUUID": "52ff5280-1a22-4a80-9d95-72e4ed97a2ae",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "checkout invalid",
+          "fullTitle": "checkout invalid",
+          "timedOut": null,
+          "duration": 7163,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "dashboardPage.addToCart_SauceLabsBackpack();\ndashboardPage.clickCartShopping();\ncartPage.checkoutProduct();\ncheckoutStepOnePage.checkoutInValid('Diah', 'Hikmah');",
+          "err": {},
+          "uuid": "d48cc5a9-1b7e-45a0-8d64-9fdc14c15f93",
+          "parentUUID": "52ff5280-1a22-4a80-9d95-72e4ed97a2ae",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "77225789-89e9-492f-baa7-320d4ff218b7",
+        "d48cc5a9-1b7e-45a0-8d64-9fdc14c15f93"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 16068,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "chart": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
