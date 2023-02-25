@@ -18,7 +18,7 @@ const URL = 'https://www.saucedemo.com/'
 beforeEach('User login and already in dashboard page', () => {
     loginPage.login(URL,'standard_user','secret_sauce')
     loginPage.assertLogin()
-    dashboardPage.assertSauceLabsBackpack
+    dashboardPage.assertSauceLabsBackpack()
 })
 
 it('checkout Sauce Labs Backpack', () => {
