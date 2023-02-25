@@ -3,6 +3,11 @@ export class CheckoutStepOnePage{
     txt_lastname = '#last-name'
     txt_postalcode = '#postal-code'
     btn_continue = '#continue'
+    
+
+    assertCheckoutStepOnePage(){
+        cy.contains('Checkout: Your Information').should('be.visible') 
+    }
 
     inpuFirstname(firstname: string){
         cy.get(this.txt_firstname).type(firstname)
@@ -25,6 +30,7 @@ export class CheckoutStepOnePage{
     }
 
     checkoutValid(firstname : string,lastname : string, postalcode : string){
+        this.assertCheckoutStepOnePage()
         this.inpuFirstname(firstname)
         this.inpuLastname(lastname)
         this.inpuPostalcode(postalcode)
@@ -32,6 +38,7 @@ export class CheckoutStepOnePage{
     }
 
     checkoutInValid(firstname : string,lastname : string){
+        this.assertCheckoutStepOnePage()
         this.inpuFirstname(firstname)
         this.inpuLastname(lastname)
         this.clickContinue()
